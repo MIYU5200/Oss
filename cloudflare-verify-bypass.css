@@ -1,1 +1,79 @@
+/* style.css */
 
+/* 通用样式 */
+body {
+    font-family: 'Arial', sans-serif; /* 设置字体 */
+    line-height: 1.6; /* 行高 */
+    margin: 0; /* 移除默认外边距 */
+    padding: 20px; /* 页面内边距 */
+    background-color: #f4f4f4; /* 背景颜色 */
+    color: #333; /* 文本颜色 */
+}
+
+/* 标题样式 */
+h1 {
+    color: #0056b3; /* 标题颜色 */
+    text-align: center; /* 居中对齐 */
+    margin-bottom: 30px; /* 底部外边距 */
+}
+
+/* 段落样式 */
+p {
+    margin-bottom: 15px; /* 底部外边距 */
+}
+
+/* 链接样式 */
+a {
+    color: #007bff; /* 链接颜色 */
+    text-decoration: none; /* 移除下划线 */
+}
+
+a:hover {
+    text-decoration: underline; /* 鼠标悬停时显示下划线 */
+}
+
+/* 容器样式 */
+.container {
+    max-width: 960px; /* 最大宽度 */
+    margin: 0 auto; /* 居中显示 */
+    padding: 20px; /* 内边距 */
+    background-color: #fff; /* 背景颜色 */
+    border-radius: 8px; /* 圆角 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+}
+
+/* 按钮样式 */
+.button {
+    display: inline-block; /* 行内块级元素 */
+    padding: 10px 20px; /* 内边距 */
+    background-color: #28a745; /* 背景颜色 */
+    color: #fff; /* 文本颜色 */
+    border: none; /* 移除边框 */
+    border-radius: 5px; /* 圆角 */
+    cursor: pointer; /* 鼠标指针样式 */
+    font-size: 16px; /* 字体大小 */
+    transition: background-color 0.3s ease; /* 过渡效果 */
+}
+
+.button:hover {
+    background-color: #218838; /* 鼠标悬停时背景颜色变深 */
+}
+
+/* 图片样式 */
+img {
+    max-width: 100%; /* 图片最大宽度为父容器的100% */
+    height: auto; /* 高度自动调整，保持比例 */
+    display: block; /* 转换为块级元素，消除图片底部空白 */
+    margin-bottom: 20px; /* 底部外边距 */
+}
+
+/* 响应式设计示例：当屏幕宽度小于 768px 时 */
+@media (max-width: 768px) {
+    body {
+        padding: 10px; /* 减小内边距 */
+    }
+
+    .container {
+        margin: 10px; /* 调整外边距 */
+    }
+}
